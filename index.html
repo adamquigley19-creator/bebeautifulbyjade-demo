@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Be Beautiful by Jade | Annfield Plain, Stanley DH9</title>
-  <meta name="description" content="Be Beautiful by Jade – Personal beauty & aesthetic treatments in Annfield Plain, Stanley. Book online with a simple 20% deposit.">
+  <title>Be Beautiful by Jade | Hair Salon – Annfield Plain, Stanley</title>
+  <meta name="description" content="Be Beautiful by Jade – Friendly, professional hair salon in Annfield Plain, Stanley. Cuts, colour, balayage & more. Book online with a simple 20% deposit.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -13,14 +13,11 @@
       --sage: #8FA68A;
       --sage-light: #C5D4C1;
       --blush: #E8C4C4;
-      --blush-deep: #D4A5A5;
       --cream: #F9F6F2;
       --warm-white: #FFFCFA;
       --charcoal: #2F2F2F;
       --soft-text: #5A5A5A;
-      --gold: #C2A87A;
       --shadow: 0 18px 40px rgba(47,47,47,0.07);
-      --radius: 20px;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,7 +35,7 @@
     }
     a { text-decoration: none; color: inherit; }
 
-    /* ===== NAV ===== */
+    /* NAV */
     .nav {
       position: fixed; top: 0; width: 100%; z-index: 1000;
       padding: 1.4rem 0; transition: all 0.4s ease;
@@ -60,8 +57,7 @@
     .logo em { font-style: italic; color: var(--sage); font-weight: 500; }
     .nav-links { display: flex; gap: 2.4rem; list-style: none; }
     .nav-links a {
-      font-size: 0.9rem; font-weight: 400; letter-spacing: 0.3px;
-      transition: color 0.3s;
+      font-size: 0.9rem; font-weight: 400; transition: color 0.3s;
     }
     .nav-links a:hover { color: var(--sage); }
     .nav-book {
@@ -76,13 +72,12 @@
     }
     .burger span { width: 22px; height: 1.5px; background: var(--charcoal); transition: 0.3s; }
 
-    /* ===== HERO ===== */
+    /* HERO */
     .hero {
       min-height: 100vh;
       display: flex; align-items: center;
       padding: 8rem 0 5rem;
       background: linear-gradient(165deg, #F9F6F2 0%, #F0EBE4 40%, #E8E4DC 100%);
-      position: relative;
     }
     .hero-grid {
       max-width: 1140px; margin: 0 auto; padding: 0 2rem;
@@ -90,37 +85,33 @@
       gap: 4rem; align-items: center;
     }
     .hero-content h1 {
-      font-size: clamp(3.2rem, 6vw, 4.8rem);
-      line-height: 1.08; margin-bottom: 1.6rem;
-      font-weight: 500;
+      font-size: clamp(3.1rem, 5.8vw, 4.6rem);
+      line-height: 1.1; margin-bottom: 1.5rem; font-weight: 500;
     }
-    .hero-content h1 span {
-      font-style: italic; color: var(--sage);
-    }
+    .hero-content h1 span { font-style: italic; color: var(--sage); }
     .hero-content .lead {
       font-size: 1.15rem; color: var(--soft-text);
-      max-width: 420px; margin-bottom: 2.4rem; font-weight: 300;
+      max-width: 440px; margin-bottom: 2.3rem; font-weight: 300;
     }
     .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       padding: 1rem 2.2rem; border-radius: 100px;
-      font-size: 0.9rem; font-weight: 500; letter-spacing: 0.4px;
-      transition: all 0.35s; cursor: pointer; border: none;
+      font-size: 0.9rem; font-weight: 500; transition: all 0.35s;
+      cursor: pointer; border: none;
     }
-    .btn-primary {
-      background: var(--charcoal); color: white;
-    }
+    .btn-primary { background: var(--charcoal); color: white; }
     .btn-primary:hover { background: var(--sage); transform: translateY(-2px); }
     .btn-ghost {
       background: transparent; color: var(--charcoal);
       border: 1.5px solid var(--charcoal);
     }
     .btn-ghost:hover { background: var(--charcoal); color: white; }
+
     .hero-card {
       background: var(--warm-white);
       border-radius: 28px;
-      padding: 2.8rem 2.4rem;
+      padding: 2.6rem 2.3rem;
       box-shadow: var(--shadow);
       position: relative;
     }
@@ -133,27 +124,22 @@
     }
     .hero-card .eyebrow {
       font-size: 0.8rem; letter-spacing: 2px; text-transform: uppercase;
-      color: var(--sage); margin-bottom: 1rem; font-weight: 500;
+      color: var(--sage); margin-bottom: 0.9rem; font-weight: 500;
     }
-    .hero-card h3 {
-      font-size: 1.9rem; margin-bottom: 1rem; line-height: 1.25;
-    }
+    .hero-card h3 { font-size: 1.8rem; margin-bottom: 0.9rem; }
     .hero-card p {
-      color: var(--soft-text); font-weight: 300; font-size: 0.98rem;
-      margin-bottom: 1.8rem;
+      color: var(--soft-text); font-weight: 300; font-size: 0.97rem;
+      margin-bottom: 1.6rem;
     }
     .hero-card .address {
-      font-size: 0.95rem; color: var(--charcoal); font-weight: 400;
-      line-height: 1.75;
+      font-size: 0.95rem; line-height: 1.75;
     }
     .hero-card .address a {
-      color: var(--sage);
-      font-weight: 500;
-      transition: color 0.3s;
+      color: var(--sage); font-weight: 500;
     }
     .hero-card .address a:hover { color: var(--charcoal); }
 
-    /* ===== MEET JADE ===== */
+    /* MEET JADE */
     .meet {
       padding: 7rem 0;
       background: var(--warm-white);
@@ -164,44 +150,43 @@
       gap: 5rem; align-items: center;
     }
     .meet-visual {
-      height: 520px;
+      height: 500px;
       border-radius: 28px;
       background: linear-gradient(160deg, var(--sage-light), var(--blush));
       position: relative;
-      overflow: hidden;
     }
     .meet-visual::after {
       content: 'JADE';
       position: absolute; bottom: 2rem; left: 2rem;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 3.5rem; font-weight: 500; color: rgba(255,255,255,0.35);
-      letter-spacing: 8px;
+      font-size: 3.2rem; color: rgba(255,255,255,0.35);
+      letter-spacing: 6px;
     }
     .meet-content .label {
       font-size: 0.8rem; letter-spacing: 2.5px; text-transform: uppercase;
       color: var(--sage); margin-bottom: 1rem; font-weight: 500;
     }
     .meet-content h2 {
-      font-size: clamp(2.4rem, 4vw, 3.2rem);
-      margin-bottom: 1.6rem; line-height: 1.2;
+      font-size: clamp(2.3rem, 4vw, 3.1rem);
+      margin-bottom: 1.5rem; line-height: 1.2;
     }
     .meet-content p {
       color: var(--soft-text); font-weight: 300;
-      margin-bottom: 1.3rem; font-size: 1.05rem;
+      margin-bottom: 1.2rem; font-size: 1.05rem;
     }
     .meet-content .signature {
-      margin-top: 2rem;
+      margin-top: 1.8rem;
       font-family: 'Cormorant Garamond', serif;
       font-style: italic; font-size: 1.4rem; color: var(--sage);
     }
 
-    /* ===== TREATMENTS ===== */
-    .treatments {
+    /* SERVICES */
+    .services {
       padding: 7rem 0;
       background: var(--cream);
     }
     .section-head {
-      text-align: center; max-width: 560px; margin: 0 auto 4rem;
+      text-align: center; max-width: 560px; margin: 0 auto 3.8rem;
     }
     .section-head .label {
       font-size: 0.8rem; letter-spacing: 2.5px; text-transform: uppercase;
@@ -212,83 +197,81 @@
     }
     .section-head p { color: var(--soft-text); font-weight: 300; }
 
-    .treat-list {
-      max-width: 900px; margin: 0 auto; padding: 0 2rem;
-      display: flex; flex-direction: column; gap: 1.2rem;
+    .service-list {
+      max-width: 920px; margin: 0 auto; padding: 0 2rem;
+      display: flex; flex-direction: column; gap: 1.1rem;
     }
-    .treat-item {
+    .service-item {
       background: var(--warm-white);
       border-radius: 18px;
-      padding: 1.6rem 2rem;
+      padding: 1.5rem 1.9rem;
       display: grid;
       grid-template-columns: 1fr auto auto;
-      gap: 1.5rem;
+      gap: 1.4rem;
       align-items: center;
       cursor: pointer;
       transition: all 0.35s;
       border: 1px solid transparent;
     }
-    .treat-item:hover {
+    .service-item:hover {
       border-color: var(--sage-light);
       box-shadow: var(--shadow);
-      transform: translateX(6px);
+      transform: translateX(5px);
     }
-    .treat-item h3 {
-      font-size: 1.35rem; margin-bottom: 0.25rem;
-    }
-    .treat-item p {
+    .service-item h3 { font-size: 1.3rem; margin-bottom: 0.2rem; }
+    .service-item p {
       font-size: 0.9rem; color: var(--soft-text); font-weight: 300;
     }
-    .treat-price {
+    .service-price {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem; color: var(--sage); font-weight: 600;
+      font-size: 1.45rem; color: var(--sage); font-weight: 600;
       text-align: right;
     }
-    .treat-price small {
+    .service-price small {
       display: block; font-size: 0.75rem; color: #999;
       font-family: 'Outfit', sans-serif; font-weight: 400;
     }
-    .treat-cta {
+    .service-cta {
       background: var(--charcoal); color: white;
-      padding: 0.6rem 1.3rem; border-radius: 100px;
+      padding: 0.55rem 1.25rem; border-radius: 100px;
       font-size: 0.8rem; font-weight: 500; white-space: nowrap;
       transition: background 0.3s;
     }
-    .treat-item:hover .treat-cta { background: var(--sage); }
+    .service-item:hover .service-cta { background: var(--sage); }
 
-    /* ===== EXPERIENCE ===== */
-    .experience {
+    /* WHY */
+    .why {
       padding: 7rem 0;
       background: var(--charcoal);
       color: white;
     }
-    .experience .section-head .label { color: var(--sage-light); }
-    .experience .section-head h2 { color: white; }
-    .experience .section-head p { color: rgba(255,255,255,0.65); }
-    .exp-grid {
+    .why .section-head .label { color: var(--sage-light); }
+    .why .section-head h2 { color: white; }
+    .why .section-head p { color: rgba(255,255,255,0.65); }
+    .why-grid {
       max-width: 1140px; margin: 0 auto; padding: 0 2rem;
       display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
     }
-    .exp-card {
+    .why-card {
       background: rgba(255,255,255,0.04);
       border: 1px solid rgba(255,255,255,0.08);
       border-radius: 20px;
-      padding: 2.4rem 2rem;
+      padding: 2.3rem 2rem;
       transition: all 0.35s;
     }
-    .exp-card:hover {
+    .why-card:hover {
       background: rgba(255,255,255,0.07);
       border-color: var(--sage);
     }
-    .exp-num {
+    .why-num {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem; color: var(--sage-light);
-      opacity: 0.5; line-height: 1; margin-bottom: 1rem;
+      font-size: 2.7rem; color: var(--sage-light);
+      opacity: 0.5; line-height: 1; margin-bottom: 0.9rem;
     }
-    .exp-card h3 { font-size: 1.4rem; margin-bottom: 0.8rem; }
-    .exp-card p { color: rgba(255,255,255,0.65); font-weight: 300; font-size: 0.95rem; }
+    .why-card h3 { font-size: 1.35rem; margin-bottom: 0.7rem; }
+    .why-card p { color: rgba(255,255,255,0.65); font-weight: 300; font-size: 0.95rem; }
 
-    /* ===== BOOKING ===== */
+    /* BOOKING */
     .booking {
       padding: 7rem 0;
       background: var(--warm-white);
@@ -297,23 +280,21 @@
       max-width: 1100px; margin: 0 auto; padding: 0 2rem;
       display: grid; grid-template-columns: 0.95fr 1.05fr; gap: 3.5rem;
     }
-    .booking-info h3 {
-      font-size: 1.9rem; margin-bottom: 1.2rem;
-    }
+    .booking-info h3 { font-size: 1.85rem; margin-bottom: 1.1rem; }
     .booking-info > p {
-      color: var(--soft-text); font-weight: 300; margin-bottom: 1.8rem;
+      color: var(--soft-text); font-weight: 300; margin-bottom: 1.7rem;
     }
-    .price-table { list-style: none; margin-bottom: 2rem; }
+    .price-table { list-style: none; margin-bottom: 1.8rem; }
     .price-table li {
       display: flex; justify-content: space-between;
-      padding: 0.85rem 0; border-bottom: 1px solid #eee;
+      padding: 0.8rem 0; border-bottom: 1px solid #eee;
       font-size: 0.95rem;
     }
     .price-table .cost { color: var(--sage); font-weight: 600; }
     .policy {
       background: #F4F1EC;
       border-left: 3px solid var(--sage);
-      padding: 1.2rem 1.4rem;
+      padding: 1.15rem 1.3rem;
       font-size: 0.9rem; color: var(--soft-text);
       border-radius: 0 12px 12px 0;
     }
@@ -321,32 +302,32 @@
 
     .booking-form {
       background: var(--cream);
-      padding: 2.4rem;
+      padding: 2.3rem;
       border-radius: 24px;
       box-shadow: var(--shadow);
     }
     .breakdown {
       background: var(--charcoal);
       color: white;
-      padding: 1.4rem 1.5rem;
+      padding: 1.35rem 1.4rem;
       border-radius: 16px;
-      margin-bottom: 1.7rem;
+      margin-bottom: 1.6rem;
     }
     .breakdown .row {
       display: flex; justify-content: space-between;
-      margin-bottom: 0.5rem; font-size: 0.95rem;
+      margin-bottom: 0.45rem; font-size: 0.95rem;
     }
     .breakdown .row:last-child { margin-bottom: 0; }
     .breakdown .line {
       height: 1px; background: rgba(255,255,255,0.15);
-      margin: 0.8rem 0;
+      margin: 0.75rem 0;
     }
     .breakdown .deposit {
-      font-size: 1.15rem; font-weight: 600; color: var(--sage-light);
+      font-size: 1.12rem; font-weight: 600; color: var(--sage-light);
     }
     .breakdown .balance { color: rgba(255,255,255,0.6); font-size: 0.88rem; }
 
-    .form-group { margin-bottom: 1.25rem; }
+    .form-group { margin-bottom: 1.2rem; }
     .form-group label {
       display: block; font-size: 0.78rem; font-weight: 500;
       letter-spacing: 0.6px; text-transform: uppercase;
@@ -355,9 +336,9 @@
     .form-group input,
     .form-group select,
     .form-group textarea {
-      width: 100%; padding: 0.9rem 1.1rem;
+      width: 100%; padding: 0.88rem 1.05rem;
       border: 1px solid #E5DFD6; border-radius: 12px;
-      font-family: inherit; font-size: 0.98rem;
+      font-family: inherit; font-size: 0.97rem;
       background: white; transition: border-color 0.3s;
     }
     .form-group input:focus,
@@ -369,7 +350,7 @@
 
     .agree {
       display: flex; gap: 0.8rem; align-items: flex-start;
-      margin-bottom: 1.6rem;
+      margin-bottom: 1.5rem;
     }
     .agree input {
       width: 18px; height: 18px; margin-top: 3px;
@@ -381,15 +362,15 @@
     }
 
     .submit-btn {
-      width: 100%; padding: 1.15rem;
+      width: 100%; padding: 1.1rem;
       background: var(--charcoal); color: white;
       border: none; border-radius: 100px;
-      font-size: 0.95rem; font-weight: 500; letter-spacing: 0.8px;
+      font-size: 0.95rem; font-weight: 500; letter-spacing: 0.7px;
       cursor: pointer; transition: all 0.3s;
     }
     .submit-btn:hover { background: var(--sage); }
 
-    /* ===== WORDS ===== */
+    /* TESTIMONIALS */
     .words {
       padding: 7rem 0;
       background: var(--cream);
@@ -400,31 +381,28 @@
     }
     .word-card {
       background: var(--warm-white);
-      padding: 2.3rem;
+      padding: 2.2rem;
       border-radius: 20px;
       position: relative;
     }
     .word-card::before {
       content: '“';
       font-family: 'Cormorant Garamond', serif;
-      font-size: 5rem; color: var(--sage-light);
-      position: absolute; top: 1rem; left: 1.4rem;
-      line-height: 1; opacity: 0.6;
+      font-size: 4.8rem; color: var(--sage-light);
+      position: absolute; top: 0.9rem; left: 1.3rem;
+      line-height: 1; opacity: 0.55;
     }
     .word-card p {
       font-style: italic; color: var(--soft-text);
-      margin-bottom: 1.4rem; position: relative; z-index: 1;
-      font-size: 1.02rem;
+      margin-bottom: 1.3rem; position: relative; z-index: 1;
     }
-    .word-card .author {
-      font-weight: 500; font-size: 0.95rem;
-    }
+    .word-card .author { font-weight: 500; font-size: 0.95rem; }
     .word-card .author span {
       display: block; font-weight: 300; font-size: 0.85rem;
       color: #999; margin-top: 0.15rem;
     }
 
-    /* ===== FOOTER ===== */
+    /* FOOTER */
     footer {
       background: var(--charcoal);
       color: rgba(255,255,255,0.7);
@@ -444,7 +422,6 @@
     }
     .footer-col ul { list-style: none; }
     .footer-col li { margin-bottom: 0.55rem; font-size: 0.95rem; }
-    .footer-col a { transition: color 0.3s; }
     .footer-col a:hover { color: var(--sage-light); }
     .footer-bottom {
       max-width: 1140px; margin: 0 auto; padding: 1.8rem 2rem 0;
@@ -453,7 +430,7 @@
     }
     .footer-bottom a { color: var(--sage-light); }
 
-    /* ===== MODAL ===== */
+    /* MODAL */
     .modal-bg {
       position: fixed; inset: 0; background: rgba(0,0,0,0.6);
       z-index: 2000; display: none; align-items: center; justify-content: center;
@@ -461,7 +438,7 @@
     }
     .modal-bg.active { display: flex; }
     .modal {
-      background: white; border-radius: 24px; padding: 2.6rem;
+      background: white; border-radius: 24px; padding: 2.5rem;
       max-width: 460px; width: 100%; text-align: center;
       box-shadow: 0 30px 60px rgba(0,0,0,0.2);
       animation: rise 0.35s ease;
@@ -502,17 +479,17 @@
     }
     .modal-close:hover { background: var(--sage); }
 
-    /* ===== MOBILE ===== */
+    /* MOBILE */
     @media (max-width: 920px) {
       .hero-grid, .meet-grid, .booking-wrap { grid-template-columns: 1fr; gap: 3rem; }
       .hero-card { order: -1; }
-      .meet-visual { height: 380px; }
-      .exp-grid, .words-grid { grid-template-columns: 1fr; }
-      .treat-item {
+      .meet-visual { height: 360px; }
+      .why-grid, .words-grid { grid-template-columns: 1fr; }
+      .service-item {
         grid-template-columns: 1fr;
-        gap: 0.8rem; text-align: left;
+        gap: 0.7rem; text-align: left;
       }
-      .treat-price { text-align: left; }
+      .service-price { text-align: left; }
       .nav-links {
         position: fixed; top: 0; right: -100%; width: 270px; height: 100vh;
         background: white; flex-direction: column; padding: 6rem 2rem 2rem;
@@ -541,9 +518,9 @@
       <a href="#" class="logo">Be Beautiful <em>by Jade</em></a>
       <ul class="nav-links" id="navLinks">
         <li><a href="#meet">About Jade</a></li>
-        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#booking">Book</a></li>
-        <li><a href="#words">Kind Words</a></li>
+        <li><a href="#words">Reviews</a></li>
         <li><a href="#contact">Visit</a></li>
       </ul>
       <a href="#booking" class="nav-book">Book Now</a>
@@ -557,17 +534,17 @@
   <section class="hero">
     <div class="hero-grid">
       <div class="hero-content">
-        <h1>Your beauty,<br><span>gently elevated.</span></h1>
-        <p class="lead">A calm, personal studio in Annfield Plain where every treatment is chosen to help you feel quietly confident and beautifully yourself.</p>
+        <h1>Beautiful hair,<br><span>beautifully done.</span></h1>
+        <p class="lead">A warm, friendly hair salon in the heart of Annfield Plain. Cuts, colour, balayage and more — tailored to you.</p>
         <div class="hero-actions">
           <a href="#booking" class="btn btn-primary">Book an Appointment</a>
-          <a href="#treatments" class="btn btn-ghost">Explore Treatments</a>
+          <a href="#services" class="btn btn-ghost">View Services</a>
         </div>
       </div>
       <div class="hero-card">
-        <div class="eyebrow">Studio Location</div>
+        <div class="eyebrow">Salon Location</div>
         <h3>Come and see us</h3>
-        <p>A warm, welcoming space designed for you to relax and leave feeling like the best version of yourself.</p>
+        <p>A relaxed, welcoming salon where you’ll feel looked after from the moment you walk in.</p>
         <div class="address">
           2–4 Front Street<br>
           Annfield Plain<br>
@@ -583,103 +560,112 @@
     <div class="meet-grid">
       <div class="meet-visual"></div>
       <div class="meet-content">
-        <div class="label">Meet the founder</div>
+        <div class="label">Meet the stylist</div>
         <h2>Hello, I’m Jade</h2>
-        <p>Be Beautiful started from a simple belief — that beauty treatments should feel personal, never rushed, and always leave you feeling more like yourself.</p>
-        <p>Whether you’re coming for a subtle refresh or a moment of self-care, you’ll find a calm space, honest advice, and results that feel natural.</p>
-        <p>I can’t wait to welcome you to the studio.</p>
+        <p>Be Beautiful by Jade is a friendly, independent hair salon built on simple values: great hair, honest advice, and making every client feel welcome.</p>
+        <p>Whether you need a fresh cut, a colour change, or just a really good blow dry, I’ll take the time to listen and create a look that works for you and your lifestyle.</p>
+        <p>I look forward to seeing you in the salon.</p>
         <div class="signature">— Jade</div>
       </div>
     </div>
   </section>
 
-  <!-- TREATMENTS -->
-  <section class="treatments" id="treatments">
+  <!-- SERVICES -->
+  <section class="services" id="services">
     <div class="section-head">
       <div class="label">What we offer</div>
-      <h2>Signature Treatments</h2>
-      <p>Thoughtfully chosen treatments with clear pricing. A 20% deposit secures your appointment.</p>
+      <h2>Hair Services & Pricing</h2>
+      <p>Clear prices and a simple 20% deposit to secure your appointment. Click any service to book.</p>
     </div>
 
-    <div class="treat-list">
-      <div class="treat-item" data-treatment="Anti-Wrinkle" data-price="180">
+    <div class="service-list">
+      <div class="service-item" data-service="Ladies Cut & Blow Dry" data-price="42">
         <div>
-          <h3>Anti-Wrinkle Injections</h3>
-          <p>Softens lines for a fresh, rested appearance</p>
+          <h3>Ladies Cut & Blow Dry</h3>
+          <p>Wash, cut and finish tailored to your hair and face shape</p>
         </div>
-        <div class="treat-price">£180 <small>Deposit £36</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">£42 <small>Deposit £8.40</small></div>
+        <div class="service-cta">Book</div>
       </div>
 
-      <div class="treat-item" data-treatment="Lip Fillers" data-price="200">
+      <div class="service-item" data-service="Restyle Cut & Blow Dry" data-price="52">
         <div>
-          <h3>Lip Fillers</h3>
-          <p>Natural volume and soft definition</p>
+          <h3>Restyle Cut & Blow Dry</h3>
+          <p>A complete change of shape with consultation and finish</p>
         </div>
-        <div class="treat-price">£200 <small>Deposit £40</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">£52 <small>Deposit £10.40</small></div>
+        <div class="service-cta">Book</div>
       </div>
 
-      <div class="treat-item" data-treatment="Skin Boosters" data-price="230">
+      <div class="service-item" data-service="Full Head Colour" data-price="75">
         <div>
-          <h3>Skin Boosters</h3>
-          <p>Deep hydration for glowing, healthy skin</p>
+          <h3>Full Head Colour</h3>
+          <p>All-over colour application with toner if needed</p>
         </div>
-        <div class="treat-price">£230 <small>Deposit £46</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">£75 <small>Deposit £15</small></div>
+        <div class="service-cta">Book</div>
       </div>
 
-      <div class="treat-item" data-treatment="Brow Lamination" data-price="45">
+      <div class="service-item" data-service="Root Touch-Up" data-price="48">
         <div>
-          <h3>Brow Lamination</h3>
-          <p>Fluffy, polished brows that frame the face</p>
+          <h3>Root Touch-Up</h3>
+          <p>Refresh your roots for a seamless finish</p>
         </div>
-        <div class="treat-price">£45 <small>Deposit £9</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">£48 <small>Deposit £9.60</small></div>
+        <div class="service-cta">Book</div>
       </div>
 
-      <div class="treat-item" data-treatment="Lash Lift & Tint" data-price="50">
+      <div class="service-item" data-service="Highlights / Balayage" data-price="110">
         <div>
-          <h3>Lash Lift & Tint</h3>
-          <p>Lifted, tinted lashes for a wide-awake look</p>
+          <h3>Highlights / Balayage</h3>
+          <p>Full or partial highlights or soft balayage</p>
         </div>
-        <div class="treat-price">£50 <small>Deposit £10</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">£110 <small>Deposit £22</small></div>
+        <div class="service-cta">Book</div>
       </div>
 
-      <div class="treat-item" data-treatment="Consultation" data-price="0">
+      <div class="service-item" data-service="Blow Dry" data-price="28">
+        <div>
+          <h3>Blow Dry</h3>
+          <p>Professional wash and blow dry finish</p>
+        </div>
+        <div class="service-price">£28 <small>Deposit £5.60</small></div>
+        <div class="service-cta">Book</div>
+      </div>
+
+      <div class="service-item" data-service="Consultation" data-price="0">
         <div>
           <h3>Consultation</h3>
-          <p>Personal advice and a tailored treatment plan</p>
+          <p>Free advice on cut, colour or style options</p>
         </div>
-        <div class="treat-price">Free <small>No deposit</small></div>
-        <div class="treat-cta">Book</div>
+        <div class="service-price">Free <small>No deposit</small></div>
+        <div class="service-cta">Book</div>
       </div>
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="experience" id="experience">
+  <!-- WHY -->
+  <section class="why" id="why">
     <div class="section-head">
-      <div class="label">The difference</div>
-      <h2>Why clients return</h2>
-      <p>A quieter, more personal approach to beauty.</p>
+      <div class="label">Why clients return</div>
+      <h2>The Be Beautiful difference</h2>
+      <p>Friendly service and hair that works for real life.</p>
     </div>
-    <div class="exp-grid">
-      <div class="exp-card">
-        <div class="exp-num">01</div>
-        <h3>Personal & Unhurried</h3>
-        <p>You’ll never feel like just another appointment. Every session is tailored and unrushed.</p>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-num">01</div>
+        <h3>Personal & Relaxed</h3>
+        <p>You’ll never feel rushed. Every appointment is tailored and unhurried.</p>
       </div>
-      <div class="exp-card">
-        <div class="exp-num">02</div>
-        <h3>Natural Results</h3>
-        <p>Subtle enhancements that leave you looking refreshed — never overdone.</p>
+      <div class="why-card">
+        <div class="why-num">02</div>
+        <h3>Honest Advice</h3>
+        <p>Clear recommendations based on your hair type, lifestyle and budget.</p>
       </div>
-      <div class="exp-card">
-        <div class="exp-num">03</div>
-        <h3>Simple Booking</h3>
-        <p>Secure your preferred time with a straightforward 20% deposit.</p>
+      <div class="why-card">
+        <div class="why-num">03</div>
+        <h3>Easy Booking</h3>
+        <p>Secure your preferred time with a simple 20% deposit.</p>
       </div>
     </div>
   </section>
@@ -689,19 +675,20 @@
     <div class="section-head">
       <div class="label">Reserve your time</div>
       <h2>Book Your Appointment</h2>
-      <p>Select your treatment and preferred slot. A 20% deposit confirms your booking.</p>
+      <p>Select your service and preferred slot. A 20% deposit confirms your booking.</p>
     </div>
 
     <div class="booking-wrap">
       <div class="booking-info">
-        <h3>Pricing at a glance</h3>
-        <p>Clear prices with no surprises. The remaining balance is due on the day of your treatment.</p>
+        <h3>Pricing overview</h3>
+        <p>Transparent prices. The remaining balance is due on the day of your appointment.</p>
         <ul class="price-table">
-          <li><span>Anti-Wrinkle</span><span class="cost">from £180</span></li>
-          <li><span>Lip Fillers</span><span class="cost">from £200</span></li>
-          <li><span>Skin Boosters</span><span class="cost">from £230</span></li>
-          <li><span>Brow Lamination</span><span class="cost">£45</span></li>
-          <li><span>Lash Lift & Tint</span><span class="cost">£50</span></li>
+          <li><span>Ladies Cut & Blow Dry</span><span class="cost">£42</span></li>
+          <li><span>Restyle Cut & Blow Dry</span><span class="cost">£52</span></li>
+          <li><span>Full Head Colour</span><span class="cost">£75</span></li>
+          <li><span>Root Touch-Up</span><span class="cost">£48</span></li>
+          <li><span>Highlights / Balayage</span><span class="cost">from £110</span></li>
+          <li><span>Blow Dry</span><span class="cost">£28</span></li>
           <li><span>Consultation</span><span class="cost">Free</span></li>
         </ul>
         <div class="policy">
@@ -713,7 +700,7 @@
         <form id="bookingForm">
           <div class="breakdown">
             <div class="row">
-              <span>Treatment Total</span>
+              <span>Service Total</span>
               <span id="totalPrice">£0</span>
             </div>
             <div class="line"></div>
@@ -728,14 +715,15 @@
           </div>
 
           <div class="form-group">
-            <label for="treatment">Treatment *</label>
-            <select id="treatment" required>
-              <option value="" data-price="0">Choose a treatment...</option>
-              <option value="Anti-Wrinkle" data-price="180">Anti-Wrinkle – from £180</option>
-              <option value="Lip Fillers" data-price="200">Lip Fillers – from £200</option>
-              <option value="Skin Boosters" data-price="230">Skin Boosters – from £230</option>
-              <option value="Brow Lamination" data-price="45">Brow Lamination – £45</option>
-              <option value="Lash Lift & Tint" data-price="50">Lash Lift & Tint – £50</option>
+            <label for="service">Service *</label>
+            <select id="service" required>
+              <option value="" data-price="0">Choose a service...</option>
+              <option value="Ladies Cut & Blow Dry" data-price="42">Ladies Cut & Blow Dry – £42</option>
+              <option value="Restyle Cut & Blow Dry" data-price="52">Restyle Cut & Blow Dry – £52</option>
+              <option value="Full Head Colour" data-price="75">Full Head Colour – £75</option>
+              <option value="Root Touch-Up" data-price="48">Root Touch-Up – £48</option>
+              <option value="Highlights / Balayage" data-price="110">Highlights / Balayage – from £110</option>
+              <option value="Blow Dry" data-price="28">Blow Dry – £28</option>
               <option value="Consultation" data-price="0">Consultation – Free</option>
             </select>
           </div>
@@ -749,14 +737,15 @@
               <label for="time">Preferred Time *</label>
               <select id="time" required>
                 <option value="">Select...</option>
-                <option value="09:30">09:30</option>
-                <option value="10:30">10:30</option>
-                <option value="11:30">11:30</option>
-                <option value="12:30">12:30</option>
-                <option value="13:30">13:30</option>
-                <option value="14:30">14:30</option>
-                <option value="15:30">15:30</option>
-                <option value="16:30">16:30</option>
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00">13:00</option>
+                <option value="14:00">14:00</option>
+                <option value="15:00">15:00</option>
+                <option value="16:00">16:00</option>
+                <option value="17:00">17:00</option>
               </select>
             </div>
           </div>
@@ -779,7 +768,7 @@
 
           <div class="form-group">
             <label for="notes">Notes (optional)</label>
-            <textarea id="notes" rows="3" placeholder="Anything you’d like us to know..."></textarea>
+            <textarea id="notes" rows="3" placeholder="Anything you’d like us to know about your hair or the look you’d like..."></textarea>
           </div>
 
           <div class="agree">
@@ -795,24 +784,24 @@
     </div>
   </section>
 
-  <!-- KIND WORDS -->
+  <!-- REVIEWS -->
   <section class="words" id="words">
     <div class="section-head">
       <div class="label">Client love</div>
       <h2>Kind words</h2>
-      <p>A few notes from people who’ve visited the studio.</p>
+      <p>What clients say about their visits.</p>
     </div>
     <div class="words-grid">
       <div class="word-card">
-        <p>Jade makes you feel completely at ease. The results are always natural and the whole experience feels special.</p>
+        <p>Jade always does an amazing job. My hair feels healthy and looks exactly how I want it. Lovely salon too.</p>
         <div class="author">Sophie R.<span>Annfield Plain</span></div>
       </div>
       <div class="word-card">
-        <p>I’ve tried a few places but keep coming back here. It’s calm, professional and Jade really listens.</p>
+        <p>I’ve been coming for ages. Great cuts, great colour, and Jade really listens to what you want.</p>
         <div class="author">Laura M.<span>Stanley</span></div>
       </div>
       <div class="word-card">
-        <p>Beautiful studio and even better results. Highly recommend if you want something subtle and well done.</p>
+        <p>Friendly, professional and the results are always spot on. Highly recommend Be Beautiful by Jade.</p>
         <div class="author">Chloe T.<span>County Durham</span></div>
       </div>
     </div>
@@ -823,19 +812,19 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="#" class="logo">Be Beautiful <em style="color:var(--sage-light)">by Jade</em></a>
-        <p>A personal beauty studio in Annfield Plain, helping you feel quietly confident every day.</p>
+        <p>A friendly, independent hair salon in Annfield Plain helping you look and feel your best.</p>
       </div>
       <div class="footer-col">
         <h4>Explore</h4>
         <ul>
           <li><a href="#meet">About Jade</a></li>
-          <li><a href="#treatments">Treatments</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#booking">Book Now</a></li>
-          <li><a href="#words">Kind Words</a></li>
+          <li><a href="#words">Reviews</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Visit the studio</h4>
+        <h4>Visit the salon</h4>
         <ul>
           <li>2–4 Front Street</li>
           <li>Annfield Plain</li>
@@ -895,7 +884,7 @@
     document.getElementById('date').min = new Date().toISOString().split('T')[0];
 
     // Pricing
-    const treatmentSelect = document.getElementById('treatment');
+    const serviceSelect = document.getElementById('service');
     const totalEl = document.getElementById('totalPrice');
     const depositEl = document.getElementById('depositPrice');
     const balanceEl = document.getElementById('balancePrice');
@@ -905,19 +894,19 @@
     }
 
     function updatePrices() {
-      const price = parseFloat(treatmentSelect.selectedOptions[0].dataset.price) || 0;
+      const price = parseFloat(serviceSelect.selectedOptions[0].dataset.price) || 0;
       const deposit = Math.round(price * 0.2 * 100) / 100;
       const balance = Math.round((price - deposit) * 100) / 100;
       totalEl.textContent = money(price);
       depositEl.textContent = money(deposit);
       balanceEl.textContent = money(balance);
     }
-    treatmentSelect.addEventListener('change', updatePrices);
+    serviceSelect.addEventListener('change', updatePrices);
 
-    // Click treatment → fill form
-    document.querySelectorAll('.treat-item').forEach(item => {
+    // Click service → fill form
+    document.querySelectorAll('.service-item').forEach(item => {
       item.addEventListener('click', () => {
-        treatmentSelect.value = item.dataset.treatment;
+        serviceSelect.value = item.dataset.service;
         updatePrices();
         document.getElementById('booking').scrollIntoView({ behavior: 'smooth' });
       });
@@ -933,7 +922,7 @@
     form.addEventListener('submit', e => {
       e.preventDefault();
 
-      const treatment = treatmentSelect.value;
+      const service = serviceSelect.value;
       const date = document.getElementById('date').value;
       const time = document.getElementById('time').value;
       const name = document.getElementById('name').value;
@@ -941,7 +930,7 @@
       const phone = document.getElementById('phone').value;
       const notes = document.getElementById('notes').value;
 
-      const price = parseFloat(treatmentSelect.selectedOptions[0].dataset.price) || 0;
+      const price = parseFloat(serviceSelect.selectedOptions[0].dataset.price) || 0;
       const deposit = Math.round(price * 0.2 * 100) / 100;
       const balance = Math.round((price - deposit) * 100) / 100;
 
@@ -957,7 +946,7 @@
       }
 
       modalDetails.innerHTML = `
-        <div><strong>Treatment:</strong> ${treatment}</div>
+        <div><strong>Service:</strong> ${service}</div>
         <div><strong>Total:</strong> ${money(price)}</div>
         <div><strong>Deposit (20%):</strong> ${money(deposit)}</div>
         <div><strong>Balance on day:</strong> ${money(balance)}</div>
